@@ -9,3 +9,4 @@ class LoadCalc:
     def price(self):
         self.price = self.floor * self.weight // 100 * 300 + self.base_price
         # За каждые 100кг груза на этаж по 300 рублей
+        return self.price
