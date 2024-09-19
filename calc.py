@@ -27,4 +27,4 @@ class LoadCalc:
         return manual_cost + base_cost
     
     def __str__(self):
-        return f"Стоимость подъема груза: {self.price()}"
+        return f"Стоимость подъема груза: {self.price()} рублей"
