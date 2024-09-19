@@ -1,10 +1,8 @@
 from calc import LoadCalc
-print("Введите вес груза")
-weight = int(input())
-print("Введите этаж на который требуется поднять груз")
-floor = int(input())
-print("Введите возможно ли поднять груз на заданный этаж T/F")
-flag = bool(input())
+
+weight = int(input("Введите вес груза: "))
+floor = int(input("Введите этаж на который требуется поднять груз: "))
+flag = bool(input("Введите возможно ли поднять груз на заданный этаж T/F: "))
 
 if weight <= 0:
     print("Вес должен быть больше 0")
