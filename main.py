@@ -27,7 +27,4 @@ while True:
     else:
         print("Пожалуйста, введите 't' или 'f'")
 
-
-new_calc  = LoadCalc(weight,floor,flag)
-
-print(new_calc.price())
+print(LoadCalc(weight,floor,flag))
