@@ -12,3 +12,5 @@ if floor <= 1:
     print("Этаж должен быть выше 1")
 
 new_calc  = LoadCalc(weight,floor,flag)
+
+print(new_calc.price())

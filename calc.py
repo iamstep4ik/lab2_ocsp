@@ -1,12 +1,20 @@
 class LoadCalc:
-    base_price = 2000
-
-    def __init__ (self, weight, floor, elevator):
+      BASE_COST = {
+        50: 300,
+        100: 1000,
+        300: 2000
+    }
+   
+def __init__ (self, weight, floor, elevator):
         self.weight = weight
         self.floor = floor
         self.elevator = elevator
     
-    def price(self):
-        self.price = self.floor * self.weight // 100 * 300 + self.base_price
+def price(self):
+        base_cost = self.BASE_COST.get(self.weight, 0)
+        if self.elevator:
+               return base_cost
+        manual_cost = (self.floor-1) * self.weight // 100 * 300 + self.base_price
         # За каждые 100кг груза на этаж по 300 рублей
-        return self.price
+        return manual_cost + base_cost
+    
