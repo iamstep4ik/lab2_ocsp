@@ -14,7 +14,7 @@ while True:
     else:
         break
 
-flag = bool(input("Введите возможно ли поднять груз на заданный этаж T/F: "))
+flag = bool(input("Введите возможно ли поднять груз на заданный этаж T/F: ")).lower == 't'
 
 new_calc  = LoadCalc(weight,floor,flag)
 
