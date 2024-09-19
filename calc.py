@@ -25,3 +25,6 @@ class LoadCalc:
         # За каждые 100кг груза на этаж по 300 рублей
 
         return manual_cost + base_cost
+    
+    def __str__(self):
+        return f"Стоимость подъема груза: {self.price()}"
