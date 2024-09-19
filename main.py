@@ -1,5 +1,7 @@
 from calc import LoadCalc
 
+flag = True
+
 while True:
     weight = int(input("Введите вес груза: "))
     if weight <= 0:
@@ -14,7 +16,17 @@ while True:
     else:
         break
 
-flag = bool(input("Введите возможно ли поднять груз на заданный этаж T/F: ")).lower == 't'
+while True:
+    flag_input = input("Введите возможно ли поднять груз на заданный этаж (t/f): ").lower()
+    if flag_input == 't':
+        flag = True
+        break
+    elif flag_input == 'f':
+        flag = False
+        break
+    else:
+        print("Пожалуйста, введите 't' или 'f'")
+
 
 new_calc  = LoadCalc(weight,floor,flag)
 
